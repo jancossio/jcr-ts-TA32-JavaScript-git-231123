@@ -23,9 +23,9 @@ var bool1 = valores[0];
 
 var bool2 = valores[2];
 
-console.log("El elemento de la operacion AND es:" + (bool1 && bool2));
+console.log("El resultado de la operacion AND entre los elementos booleanos es:" + (bool1 && bool2));
 
-console.log("El elemento de la operacion OR es:" + (bool1 || bool2));
+console.log("El resultado de la operacion OR entre los elementos booleanos es:" + (bool1 || bool2));
 
 //Apartado_3
 
@@ -33,12 +33,12 @@ var oper1 = valores[1];
 
 var oper2 = valores[5];
 
-console.log("El resultado de la suma de ambos elementos es:" + (oper1 + oper2));
+console.log("El resultado de "+oper1+" + "+ oper2+" es:" + (oper1 + oper2));
 
-console.log("El resultado de la resta de ambos elementos es:" + (oper1 - oper2));
+console.log("El resultado de "+oper1+" - "+ oper2+" es:" + (oper1 - oper2));
 
-console.log("El resultado de la multiplicacion de ambos elementos es:" + (oper1 * oper2));
+console.log("El resultado de "+oper1+" x "+ oper2+" es:" + (oper1 * oper2));
 
-console.log("El resultado de la division de ambos elementos es:" + (oper1 / oper2));
+console.log("El resultado de "+oper1+" / "+ oper2+" es:" + (oper1 / oper2));
 
-console.log("El resultado de la potencia de ambos elementos es:" + (Math.pow(oper1, oper2)));
+console.log("El resultado de "+oper1+" elevado a "+ oper2+" es:" + (Math.pow(oper1, oper2)));

@@ -29,9 +29,9 @@ function palindromo(texto){
     }
 
     if(checked){
-        return("El texto es palindromo");
+        return("El texto introducido SI es palindromo");
     }else{
-        return("El texto NO es palindromo");
+        return("El texto introducido NO es palindromo");
     }
 };
 
