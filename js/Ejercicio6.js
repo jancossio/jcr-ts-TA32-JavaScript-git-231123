@@ -1,12 +1,18 @@
+//Variable almacenada
 var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N' ,'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
 
-var num = window.prompt('Qué numero quieres introducir?:','0');
-var letra = window.prompt('Qué letra quieres introducir?:','T');
+//Variables solicitadas
+var num = window.prompt('Introduce SOLO el código numerico del DNI:','0');
+num = parseInt(num);
 
-var verificado = (numero) => (numero>=0) && (numero<=99999999);
+var letra = window.prompt('Introduce SOLO la letra del DNI:','T');
 
-if(!verificado(num)){
-    alert("El numero proporcionado no es valido!");
+//Funcion llamada
+var verificado = (numero) => (numero<0) || (numero>99999999) ||  isNaN(numero);
+
+//Codigo principal
+if(verificado(num)){
+    alert("El valor proporcionado del codigo no es valido!");
 }else{
     num = num % 23;
     

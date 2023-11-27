@@ -1,4 +1,9 @@
+//Variables solicitadas
 var num = window.prompt('Qué numero entero quieres introducir?:','1');
+num = parseInt(num);
+
+//Funciones llamadas
+var verificar = (numero) => isNaN(numero);
 
 function parImpar(numero){
 
@@ -11,6 +16,11 @@ function parImpar(numero){
     }
 };
 
-var mensaje = parImpar(num);
+//Codigo principal
+if(verificar(num)){
+    alert("El parametro introducido no es un numero entero!");
+}else{
+    var mensaje = parImpar(num);
 
-alert(mensaje);
+    alert(mensaje);
+}

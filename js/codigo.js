@@ -2,4 +2,4 @@
 console.log('Hola Mundo');
 
 //A continuacion, mostramos por pantalla el mensaje "Soy el primer script"
-console.log('Soy el primer script');
+alert('Soy el primer script');

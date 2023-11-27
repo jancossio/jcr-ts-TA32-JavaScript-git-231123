@@ -1,7 +1,11 @@
+//Variables solicitadas
 var num = window.prompt('Qué numero quieres introducir?:','0');
+num = parseInt(num);
 
-var verificar = (numero) => numero<0;
+//Funciones llamadas
+var verificar = (numero) => numero<0 || isNaN(numero);
 
+//Codigo principal
 if(verificar(num)){
     alert("El numero proporcionado no es valido!");
 }else{
